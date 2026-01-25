@@ -74,5 +74,3 @@ The database schema follows best practices:
 
 <img width="1262" height="733" alt="image" src="https://github.com/user-attachments/assets/bdd888ed-e250-4587-8a8c-f64a160d5dcd" />
 
-
-Example:
