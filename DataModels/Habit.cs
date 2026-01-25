@@ -1,4 +1,6 @@
-﻿namespace Habit.DataModels
+﻿using Habit.Enums;
+
+namespace Habit.DataModels
 {
     public class Habit
     {
@@ -7,7 +9,7 @@
         public string Title { get; set; }
         public string Icon { get; set; }
         public string Color { get; set; }
-        public Enum FrequencyType { get; set; }
+        public HabitFrequency FrequencyType { get; set; }    //Daily, Weekly
         public int CurrentStreak { get; set; }
         public int BestStreak { get; set; }
 
