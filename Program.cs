@@ -1,17 +1,16 @@
 using HabitTracker.Database;
+using HabitTracker.DataModels;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
-//builder.Services.AddDbContext<HabitDbContext>(options =>
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 builder.Services.AddDbContext<HabitTrackerDbContext>(options =>
-    options.Use
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddDefaultIdentity<ApplicationUser>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentity<ApplicationUser, IdentityUser>()
+    .AddEntityFrameworkStores<HabitTrackerDbContext>();
 
 // Add services to the container.
 
