@@ -1,4 +1,4 @@
-﻿namespace Habit.DataModels
+﻿namespace HabitTracker.DataModels
 {
     public class HabitSchedule
     {

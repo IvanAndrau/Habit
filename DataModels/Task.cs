@@ -1,6 +1,6 @@
-﻿using Habit.Enums;
+﻿using HabitTracker.Enums;
 
-namespace Habit.DataModels
+namespace HabitTracker.DataModels
 {
     public class Task
     {

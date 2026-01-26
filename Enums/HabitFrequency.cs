@@ -1,4 +1,4 @@
-﻿namespace Habit.Enums
+﻿namespace HabitTracker.Enums
 {
     public enum HabitFrequency
     {
