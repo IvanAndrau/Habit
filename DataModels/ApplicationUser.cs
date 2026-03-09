@@ -7,6 +7,7 @@ namespace HabitTracker.DataModels
         public string Color { get; set; }
 
         public ICollection<Habit> Habits { get; set; }
+        public ICollection<HabitCompletion> HabitCompletions { get; set; }
 
     }
 }

@@ -14,7 +14,7 @@ namespace HabitTracker.DataModels
         public int BestStreak { get; set; }
 
         public ApplicationUser User { get; set; }
-        public ICollection<HabitSchedule> HabitSchedule { get; set; }
+        public ICollection<HabitSchedule> HabitSchedules { get; set; }
         public ICollection<HabitCompletion> HabitCompletions { get; set; }
     }
 }
