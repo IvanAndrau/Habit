@@ -5,5 +5,8 @@ namespace HabitTracker.DataModels
     public class ApplicationUser : IdentityUser
     {
         public string Color { get; set; }
+
+        public ICollection<Habit> Habits { get; set; }
+
     }
 }

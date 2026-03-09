@@ -7,9 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddDbContext<HabitTrackerDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("HabitTrackerDb")));
 
-builder.Services.AddIdentity<ApplicationUser, IdentityUser>()
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<HabitTrackerDbContext>();
 
 // Add services to the container.
