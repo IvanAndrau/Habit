@@ -7,7 +7,7 @@
         public Guid UserId { get; set; }
         public DateTime CompletedAt { get; set; }
 
-        public Habit Habit { get; set; }
-        public ApplicationUser User { get; set; }
+        public Habit Habit { get; set; } = null!;
+        public ApplicationUser User { get; set; } = null!;
     }
 }

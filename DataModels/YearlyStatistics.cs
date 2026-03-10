@@ -1,6 +1,6 @@
 ﻿namespace HabitTracker.DataModels
 {
-    public class EarlyStatistics
+    public class YearlyStatistics
     {
         public Guid Id { get; set; }
         public Guid UserId { get; set; }

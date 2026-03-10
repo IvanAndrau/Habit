@@ -8,23 +8,18 @@ namespace HabitTracker.Database.Configurations
     {
         public void Configure(EntityTypeBuilder<HabitCompletion> builder)
         {
-            builder.ToTable("habit_completion");
 
             builder.HasKey(hc => hc.Id);
 
-            builder.Property(hc => hc.Id)
-                .HasColumnName("id");
+            builder.Property(hc => hc.Id);
 
             builder.Property(hc => hc.HabitId)
-                .HasColumnName("habit_id")
                 .IsRequired();
 
             builder.Property(hc => hc.UserId)
-                .HasColumnName("user_id")
                 .IsRequired();
 
             builder.Property(hc => hc.CompletedAt)
-                .HasColumnName("completed_at")
                 .IsRequired();
 
             // Relationship: HabitCompletion → Habit
