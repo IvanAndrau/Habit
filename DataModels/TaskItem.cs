@@ -2,7 +2,7 @@
 
 namespace HabitTracker.DataModels
 {
-    public class Task
+    public class TaskItem
     {
         public Guid Id { get; set; }
         public Guid CreatedBy { get; set; }     //User ID of the task creator

@@ -10,6 +10,6 @@
         public int LongBreak { get; set; } = 15;
         public int SessionsCompleted { get; set; } = 0;
 
-        public Task Task { get; set; }
+        public TaskItem Task { get; set; }
     }
 }

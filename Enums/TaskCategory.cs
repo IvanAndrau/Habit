@@ -6,6 +6,7 @@
         Personal,
         Health,
         Education,
+        Finance,
         Leisure,
         Other
     }

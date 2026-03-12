@@ -8,8 +8,8 @@ namespace HabitTracker.DataModels
 
         public ICollection<Habit> Habits { get; set; } = [];
         public ICollection<HabitCompletion> HabitCompletions { get; set; } = [];
-        public ICollection<Task> CreatedTasks { get; set; } = [];
-        public ICollection<Task> CompletedTasks { get; set; } = [];
+        public ICollection<TaskItem> CreatedTasks { get; set; } = [];
+        public ICollection<TaskItem> CompletedTasks { get; set; } = [];
         public ICollection<TaskGroup> CreatedTaskGroups { get; set; } = [];
         public ICollection<TaskGroupMember> TaskGroupMemberships { get; set; } = [];
         public ICollection<Pomodoro> Pomodoros { get; set; } = [];

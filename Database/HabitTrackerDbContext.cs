@@ -19,7 +19,7 @@ namespace HabitTracker.Database
         public DbSet<HabitCompletion> HabitCompletions { get; set; }
         public DbSet<HabitSchedule> HabitSchedules { get; set; }
         public DbSet<Pomodoro> Pomodors { get; set; }
-        public DbSet<DataModels.Task> Tasks { get; set; }
+        public DbSet<TaskItem> Tasks { get; set; }
         public DbSet<TaskGroup> TaskGroups { get; set; }
         public DbSet<TaskGroupMember> TaskGroupMembers { get; set; }
         public DbSet<TaskProgressEvent> TaskProgressEvents { get; set; }
