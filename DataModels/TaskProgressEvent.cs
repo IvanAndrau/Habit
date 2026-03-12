@@ -9,6 +9,7 @@
         public int ToPercentage { get; set; }
         public DateTime EventDate { get; set; }
 
-        public TaskItem Task { get; set; }
+        public TaskItem Task { get; set; } = null!;
+        public ApplicationUser User { get; set; } = null!;
     }
 }

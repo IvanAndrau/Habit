@@ -24,7 +24,7 @@ namespace HabitTracker.DataModels
         public ApplicationUser CreatedBy { get; set; } = null!;
         public ApplicationUser? CompletedBy { get; set; }
         public ICollection<Pomodoro> Pomodoros { get; set; }
-        public ICollection<TaskProgressEvent> TaskProgressEvents { get; set; } = [];
+        public ICollection<TaskProgressEvent> ProgressEvents { get; set; } = [];
         public TaskGroup TaskGroup { get; set; }
     }
 }
